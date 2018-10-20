@@ -1,9 +1,10 @@
 from ExcelStat import ExcelStat
 
 EX = ExcelStat("C:\\Users\\Diego\\Desktop\\Haushaltslisten")
-# DATA = EX.get_data("Einkaufsliste ab dem 20.02.17.xlsx")
+# DATA, _ , _ = EX.get_data_xls("Einkaufsliste ab dem 24.03.18.xlsx")
 # print(DATA)
 # EX.get_statistics(DATA)
-for FILE in EX.files:
-    DATA = EX.get_data(FILE)
-    EX.get_statistics(DATA)
+# for FILE in EX.files:
+#     DATA = EX.get_data_xls(FILE)
+#     EX.get_statistics(DATA)
+EX.get_data_all("-s")
